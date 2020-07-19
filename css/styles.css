@@ -21,6 +21,27 @@ button {
 
 ul {
   list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.container {
+  margin-left: auto;
+  margin-right: auto;
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
 /*logo*/
@@ -67,33 +88,50 @@ ul {
 }
 
 /*hero*/
+.hero {
+  text-align: center;
+  margin-bottom: 94px;
+}
+
 .hero-title {
+  margin-bottom: 30px;
+
   color: var(--primary-white-color);
 
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
 
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 
 .button {
+  display: inline-block;
+  min-width: 200px;
+  padding: 10px 32px;
+  border-radius: 4px;
+  /* display: flex;
+  align-items: center;
+  letter-spacing: 0.06em; */
+
   color: var(--primary-white-color);
   background-color: var(--accent-color);
   font-weight: bold;
   font-size: 16px;
   line-height: 1.87;
-
-  display: flex;
-  align-items: center;
+  text-decoration: none;
   text-align: center;
-  letter-spacing: 0.06em;
 }
 
 /*section*/
+.section {
+  padding-bottom: 94px;
+}
+
 .section-title {
+  margin-bottom: 50px;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 36px;
@@ -103,6 +141,8 @@ ul {
 
 /*feature*/
 .feature-list .title {
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
   font-weight: 700;
   text-transform: uppercase;
@@ -111,7 +151,9 @@ ul {
 .feature-list .text {
   line-height: 1.71;
 }
-
+.img {
+  margin-bottom: 30px;
+}
 .feature-list .img:hover {
   background-color: var(--accent-color);
 }
@@ -124,18 +166,25 @@ ul {
 }
 
 /*team*/
+.team-list {
+  text-align: center;
+}
+
 .team-list .title {
+  margin-bottom: 10px;
+
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  text-align: center;
 }
 
 .team-list .text {
+  margin-bottom: 16px;
+  display: inline-block;
+
   font-size: 16px;
   line-height: 1.19px;
-  text-align: center;
 }
 
 .team-list .img-social:hover,
@@ -166,12 +215,17 @@ ul {
 
 /* portfolio */
 
+.filter {
+  margin-bottom: 34px;
+}
 .button-work {
   color: var(--title-text-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
+
+  border-radius: 4px;
 }
 
 .button-work:hover,
@@ -181,6 +235,8 @@ ul {
 }
 
 .work-list .title {
+  margin-bottom: 4px;
+
   color: var(--title-text-color);
   font-weight: 700;
   font-size: 18px;
@@ -188,6 +244,9 @@ ul {
   letter-spacing: 0.06em;
 }
 
+.work-list .img {
+  margin-bottom: 20px;
+}
 .work-list .element:hover {
   background-color: var(--accent-color);
 }
@@ -199,6 +258,8 @@ ul {
 }
 
 .work-list .text {
+  margin-bottom: 20px;
+
   font-size: 16px;
   line-height: 1.87;
 }
