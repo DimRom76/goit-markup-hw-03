@@ -279,6 +279,7 @@ p {
 .container.footer {
   display: flex;
   justify-content: space-between;
+  background: #2f303a;
 }
 
 .footer-adress .post {
@@ -362,9 +363,6 @@ p {
   letter-spacing: 0.06em;
 }
 
-.work-list .img {
-  margin-bottom: 20px;
-}
 .work-list .element:hover {
   background-color: var(--accent-color);
 }
@@ -381,4 +379,8 @@ p {
 
   font-size: 16px;
   line-height: 1.87;
+}
+
+.work-list .elem {
+  padding: 20px;
 }
